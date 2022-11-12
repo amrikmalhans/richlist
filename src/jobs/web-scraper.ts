@@ -5,7 +5,6 @@ async function webScraper() {
   try {
     const browser = await puppeteer.launch({
       headless: false,
-      args: ["--no-sandbox", "--disable-setuid-sandbox"],
       executablePath: "/usr/bin/chromium-browser",
       defaultViewport: {
         width: 1920,
