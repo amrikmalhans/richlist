@@ -19,5 +19,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: "16"
+      # We are using puppeteer to scrape the data from the website, so we need chromium to be installed in the system.
+      - run: sudo apt-get install chromium-browser
       - run: yarn
       - run: npx ts-node-dev src/index.ts
