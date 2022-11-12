@@ -5,6 +5,9 @@ env:
   SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
 
 on:
+  push:
+    branches: [main]
+
   schedule:
     - cron: "0 */12 * * *" # Every 12 hours
 
