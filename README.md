@@ -1,2 +1,2 @@
 # richlist
-cryptocurrencies richlist scraping jobs.
+cryptocurrencies richlist scraping jobs for bitcoin.
