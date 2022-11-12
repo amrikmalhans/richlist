@@ -4,7 +4,7 @@ import supabase from "../utils/supabase";
 async function webScraper() {
   try {
     const browser = await puppeteer.launch({
-      headless: false,
+      headless: true,
       args: ["--no-sandbox"],
       executablePath: "/usr/bin/chromium-browser",
       defaultViewport: {
