@@ -11,9 +11,6 @@ async function webScraper() {
         width: 1920,
         height: 1080,
       },
-      env: {
-        DISPLAY: ":10.0", // For Ubuntu.
-      },
     });
 
     const page = await browser.newPage();
