@@ -12,7 +12,7 @@ async function webScraper() {
         height: 1080,
       },
       env: {
-        DISPLAY: ":10.0", // For Ubuntu
+        DISPLAY: ":10.0", // For Ubuntu.
       },
     });
 
