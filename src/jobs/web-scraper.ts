@@ -13,10 +13,11 @@ interface Address {
 
 async function webScraper() {
   try {
+    // TODO: Best to make this a function and launch depending on the environment and OS.
     const browser = await puppeteer.launch({
-      headless: false,
-      // args: ["--no-sandbox"],
-      // executablePath: "/usr/bin/chromium-browser",
+      headless: true,
+      args: ["--no-sandbox"],
+      executablePath: "/usr/bin/chromium-browser",
       defaultViewport: {
         width: 1920,
         height: 1080,
