@@ -27,7 +27,7 @@ async function webScraper() {
     const page = await browser.newPage();
     const allAddresses: Address[] = [];
 
-    for (let i = 1; i < 2; i++) {
+    for (let i = 1; i < 100; i++) {
       await page.goto(
         `https://bitinfocharts.com/top-100-richest-bitcoin-addresses-${i}.html`
       );
