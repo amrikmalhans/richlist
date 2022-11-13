@@ -1,4 +1,4 @@
-name: Scrape BitCoin Richlist.
+name: Scrape Bitcoin Richlist.
 
 env:
   SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
